@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile's_Header</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+
+    <style>
+        /* General Styles */
+        body {
+            background-color: transparent !important;
+            margin: 0;
+            font-family: "Lucida Grande", Verdana, sans-serif;
+            ;
+        }
+
+        a {
+            text-decoration: none;
+            
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(to top, rgba(235, 100, 136, 0), rgb(0, 0, 0));
+            padding: 20px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ff6f00;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, border 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border-color: #ff6f00;
+        }
+
+        /* Header with SVG */
+        header {
+            position: relative;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            overflow: hidden;
+        }
+
+        .header-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            z-index: 0;
+        }
+
+        .header-svg {
+            position: absolute;
+            bottom: -150px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            text-shadow: 0 0 20px #ff6f00;
+            /* Golden glow */
+        }
+
+        /* Animation for SVG text */
+        @keyframes gradientAnimation {
+            0% {
+                stop-color: #ff6f00;
+            }
+
+            50% {
+                stop-color: #ff6f00;
+            }
+
+            100% {
+                stop-color: #ff6f00;
+            }
+        }
+
+        .header-svg:hover #grad1 stop {
+            animation: gradientAnimation 3s infinite;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 10px;
+            background-color: transparent;
+        }
+
+        .card {
+            background-color: transparent;
+            border: 2px solid #ff6f00;
+            border-radius: 5px;
+            padding: 20px;
+            color: #000000;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px 10px #ff6f00;
+            /* Golden shadow */
+            border-color: #ff6f00;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #ff6f00;
+        }
+
+        .card p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .card a {
+            color: #ff6f00;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            border: 1px solid #ff6f00;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .card a:hover {
+            color: #fff;
+            background-color: #ff6f00;
+        }
+
+        .image-container {
+            width: 100%;
+            padding-top: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            border: 2px solid #ff6f00;
+        }
+
+        .image-container img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transform: translate(-50%, -50%);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="https://www.utherverse.com/net/home.aspx" target="_blank">Home</a>
+        <a href="https://supportclassic.redlightcenter.com/support/home" target="_blank">Support</a>
+        <a href="https://forums.utherverse.com/" target="_blank">Forums</a>
+        <a href="https://www.utherverse.com/Clothing/" target="_blank">Clothing</a>
+        <a href="https://www.utherverse.com/net/search/search.aspx" target="_blank">Search</a>
+        <a href="https://www.utherverse.com/net/profile/view_profile.aspx?MemberID=104032246" target="_blank">NSK Fashion</a>
+    </nav>
+
+    <!-- Header with SVG -->
+    <header>
+        <img src="https://www.utherverse.com/bucket/704c6550-38c6-4984-8e72-d634f6acb034" alt="Background Image" class="header-img">
+        <svg width="850" height="450" xmlns="" class="header-sign">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#2b80cb; stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:white; stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <text x="50%" y="50%" font-family="'Great Vibes', cursive" font-size="100" fill="url(#grad1)"
+                text-anchor="middle" alignment-baseline="middle">Lorana</text>
+        </svg>
+    </header>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <div class="image-container">
+            <img src="" alt="spammerBanner">
+        </div>
+    
+        <div class="image-container">
+            <img src="" alt="club">
+        </div>
+    
+        <div class="image-container">
+            <img src="" alt="team">
+        </div>
+    
+        <div class="image-container">
+            <img src="" alt="LoranaCreations">
+        </div>
+    </div>
+
+</body>
+
+</html>
