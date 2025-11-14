@@ -1,0 +1,162 @@
+<style>.PROFILErehab {
+    /* Layout by: www.PROFILErehab.com; */
+}
+
+img {
+    border: none;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+/* Ocultar imágenes específicas */
+img[src="/images/t2/sec-header-arrow-bk.gif"] {
+    display: none;
+}
+
+/* Ocultar el encabezado */
+#ctl00_oMasterHeaderDiv,
+.MPHeaderNavCell,
+#ctl00_oMasterAdDiv,
+.MPToolsBar {
+    display: none !important;
+}
+
+/* Ocultar elementos de estado */
+span.statusDateTime,
+span.blacktext12 a {
+    visibility: hidden;
+}
+
+body {
+    background: linear-gradient(to bottom, black, transparent) !important;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+table,
+tr,
+td,
+li,
+p,
+div,
+.text {
+    background-color: transparent !important;
+    /* Asegúrate de que todas las tablas y elementos sean transparentes */
+    border-style: none;
+    color: #74f0ff !important;
+    /* Texto en color #74f0ff */
+}
+
+td.text table table table tr td a {
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+
+td.text table table table tr td a:hover {
+    color: #eb6488 !important;
+    /* Color naranja al pasar el mouse */
+    border-bottom: none;
+}
+
+table table table {
+    background-color: transparent !important;
+}
+
+table table table table {
+    background-image: none;
+}
+
+/* Textos en color #74f0ff */
+.blacktext12,
+.nametext,
+.btext,
+.orangetext15,
+.whitetext12,
+.redtext,
+.redbtext,
+.blacktext10,
+.lightbluetext8 {
+    color: #74f0ff !important;
+    /* Color #74f0ff */
+    font-family: "Century Gothic", Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+/* Enlaces */
+a {
+    color: #eb6488 !important;
+    /* Color naranja para enlaces */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eb6488 !important;
+    /* Mantener el color al pasar el mouse */
+}
+
+/* Contact Table */
+.contactTable {
+    width: 300px !important;
+    height: 150px !important;
+    padding: 0px !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent !important;
+    /* Fondo transparente */
+}
+
+.contactTable table,
+table.contactTable td {
+    padding: 0px !important;
+    border: 0px;
+    background-color: transparent !important;
+    /* Fondo transparente */
+}
+
+.contactTable a img {
+    visibility: hidden;
+}
+
+.contactTable a {
+    display: block;
+    height: 31px;
+    width: 115px;
+    background-color: transparent !important;
+    /* Fondo transparente */
+}
+
+.contactTable .text {
+    font-size: 1px !important;
+    /* Ajusta según sea necesario */
+}
+
+.link {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Estilo para las líneas horizontales */
+hr {
+    color: #eb6488;
+    background-color: #eb6488;
+    border: none;
+    height: 1px;
+    margin: 5px auto;
+}
+
+/* Estilos personalizados para las secciones */
+table#MSCodesFixer>tbody>tr>td>table>tbody:first-of-type>tr>td>div:first-of-type {
+    border-radius: 2px 2px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+/* Aplicar estilos a las secciones específicas */
+div.section-header {
+    border-radius: 2px 2px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+</style>
